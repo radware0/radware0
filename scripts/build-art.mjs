@@ -109,7 +109,7 @@ const icons = {
 };
 
 for (const [name, { label, art }] of Object.entries(icons)) {
-  await writeFile(`${assets}/tech/${name}.svg`, svg(100, 76, label, art +
+  await writeFile(`${assets}/tech/${name === 'codex' ? 'chatgpt' : name}.svg`, svg(100, 76, label, art +
     `<text x="50" y="67" font-family="${sans}" font-size="12" fill="#e0e0e0" text-anchor="middle">${escape(label)}</text>`
   ));
 }

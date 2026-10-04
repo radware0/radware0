@@ -52,7 +52,7 @@ I'm about to start learning cybersecurity — for the love of the game.
   <img src="./assets/tech/css.svg" width="100" height="76" alt="CSS" />
   <img src="./assets/tech/javascript.svg" width="100" height="76" alt="JavaScript" />
   <img src="./assets/tech/vscode.svg" width="100" height="76" alt="Visual Studio Code" />
-  <img src="./assets/tech/codex.svg" width="100" height="76" alt="Codex" />
+  <img src="./assets/tech/chatgpt.svg" width="100" height="76" alt="Codex" />
   <img src="./assets/tech/react.svg" width="100" height="76" alt="React JS" />
   <img src="./assets/tech/github.svg" width="100" height="76" alt="GitHub" />
 </p>

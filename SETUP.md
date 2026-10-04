@@ -1,6 +1,6 @@
 # Rad's GitHub profile
 
-This folder is ready to become the public profile repository **radware0/radware0**. Its root README contains the profile; all its artwork is stored locally in `assets/`.
+This folder is ready to become the public profile repository **radware0/radware0**. Its root README contains the profile, `giphy.gif` supplies the animated header, and the contribution heatmap is stored locally in `assets/`.
 
 Copy the contents of this folder, including `.github/`, into the root of that repository. Use `main` as the default branch. GitHub displays the root README automatically when the public repository name matches your username. [GitHub's profile README guide](https://docs.github.com/en/account-and-profile/how-tos/profile-customization/managing-your-profile-readme).
 
@@ -18,7 +18,7 @@ Refresh locally with Node.js 24 and an authenticated GitHub CLI:
 node scripts/update-activity.mjs
 ```
 
-Regenerate the custom SVG artwork with:
+The previous header, project, and technology SVGs are retained as unused source assets. Regenerate those legacy assets with:
 
 ```powershell
 node scripts/build-art.mjs
@@ -30,6 +30,7 @@ node scripts/build-art.mjs
 - Antwork demo: https://antwork-five.vercel.app/
 - To pin Antwork in GitHub's native **Pinned** area, use **Customize your pins** on your profile and select **antwork**. The README already features it.
 - Edit the About Me directly in `README.md`.
-- The artwork uses pure `#000000` backgrounds and white/gray foregrounds. GitHub controls the surrounding page background; choose a dark GitHub theme for the intended look.
+- The GIF fills the README width and keeps its original proportions. Keep `giphy.gif` beside `README.md` when copying or uploading the profile.
+- The project title is a native H1, and the tech stack is plain text. The heatmap uses a pure `#000000` background and white/gray foregrounds; GitHub controls the surrounding page styling.
 
-The header, orbit, ant, and tech tile treatment are authored vector assets. Product names and recognizable technology marks identify their respective tools. The inspiration screenshots are not included in the profile.
+The local previews and preview PNGs are development artifacts. `radware0-profile.zip` contains the profile files, including the GIF and activity workflow, for upload to the profile repository.

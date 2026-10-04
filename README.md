@@ -23,7 +23,7 @@ I don't even listen to school lectures, fr.
 
 I enjoy designing and developing apps through vibecoding, then learning how they work as I go. Building things is how I learn best.
 
-I'm about to start learning cybersecurity — for the love of the game.
+I'm about to start learning cybersecurity. for the love of the game.
 
 **My goal is simple: Work Hard, Play Hard.**
 

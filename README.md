@@ -25,7 +25,7 @@ I enjoy designing and developing apps through vibecoding, then learning how they
 
 I'm about to start learning cybersecurity — for the love of the game.
 
-**My goal is simple: Work Hard, Play Hard!**
+**My goal is simple: Work Hard, Play Hard.**
 
 <br />
 

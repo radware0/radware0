@@ -1,0 +1,44 @@
+name: Refresh OLED activity
+
+on:
+  schedule:
+    - cron: '17 0 * * *'
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - scripts/update-activity.mjs
+      - .github/workflows/activity.yml
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-activity
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@d23441a48e516b6c34aea4fa41551a30e30af803 # v6
+      - uses: actions/setup-node@249970729cb0ef3589644e2896645e5dc5ba9c38 # v6
+        with:
+          node-version: '24'
+          package-manager-cache: false
+      - name: Generate contribution heatmap
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PROFILE_USERNAME: ${{ github.repository_owner }}
+        run: node scripts/update-activity.mjs
+      - name: Save updated activity
+        run: |
+          git add assets/activity.svg assets/activity-mobile.svg
+          if git diff --cached --quiet; then
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh contribution heatmap"
+          git push
